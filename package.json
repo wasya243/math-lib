@@ -1,6 +1,6 @@
 {
   "name": "@vkharchenko97/math-lib",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "A simple math library with add, subtract, multiply, and divide",
