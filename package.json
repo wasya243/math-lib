@@ -1,12 +1,13 @@
 {
   "name": "@vkharchenko97/math-lib",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "A simple math library with add, subtract, multiply, and divide",
   "scripts": {
     "test": "jest",
-    "build": "tsc"
+    "build": "tsc",
+    "typecheck:test": "tsc --project tests/tsconfig.json"
   },
   "author": "Vaysl Kharchenko",
   "keywords": [
