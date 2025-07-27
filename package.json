@@ -1,0 +1,26 @@
+{
+  "name": "@vkharchenko97/math-lib",
+  "version": "1.0.2",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "description": "A simple math library with add, subtract, multiply, and divide",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "author": "Vaysl Kharchenko",
+  "keywords": [
+    "math",
+    "add",
+    "subtract",
+    "multiply",
+    "divide"
+  ],
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.1.0",
+    "jest": "^30.0.5",
+    "ts-jest": "^29.4.0",
+    "typescript": "^5.8.3"
+  }
+}
