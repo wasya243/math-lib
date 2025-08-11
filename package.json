@@ -1,9 +1,9 @@
 {
-  "name": "@vkharchenko97/math-lib",
+  "name": "@vkharchenko97/array-lib",
   "version": "1.0.7",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "description": "A simple math library with add, subtract, multiply, and divide",
+  "description": "A simple array library",
   "scripts": {
     "test": "jest",
     "build": "tsc",

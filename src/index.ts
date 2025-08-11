@@ -1,16 +1,31 @@
-export function add(a: number, b: number): number {
-  return a + b;
+export function difference<T>(array: T[], values: T[]): T[] {
+  const valueSet = new Set(values);
+  return array.filter(item => !valueSet.has(item));
 }
 
-export function subtract(a: number, b: number): number {
-  return a - b;
+export function flatten<T>(array: T[]): T[] {
+  const result: T[] = [];
+  for (const item of array) {
+    if (Array.isArray(item)) {
+      result.push(...item);
+    } else {
+      result.push(item);
+    }
+  }
+  
+  return result;
 }
 
-export function multiply(a: number, b: number): number {
-  return a * b;
-}
+export function flattenDeep<T>(array: T[]): T[] {
+  const result: T[] = [];
 
-export function divide(a: number, b: number): number {
-  if (b === 0) throw new Error("Cannot divide by zero");
-  return a / b;
+  for (const item of array) {
+    if (Array.isArray(item)) {
+      result.push(...flattenDeep<T>(item));
+    } else {
+      result.push(item);
+    }
+  }
+
+  return result;
 }
